@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="바이브 코딩 연수생을 위한 포스트 아포칼립스 웰컴 페이지" />
+    <title>VIBE//REBOOT — 바이브 코딩 생존자 캠프</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="dust" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Vibe Reboot 홈">
+        <span class="brand-mark">V//R</span>
+        <span class="brand-copy">SIGNAL<br />RESTORED</span>
+      </a>
+      <div class="system-status"><i></i> NETWORK: UNSTABLE / 2077.09.07</div>
+      <button class="sound-toggle" type="button" aria-label="배경음 상태 전환">AUDIO <span>OFF</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="coordinates" aria-hidden="true">37°33′N 126°58′E<br />SECTOR // SEOUL</div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span>TRANSMISSION 001</span> // NEW SURVIVORS DETECTED</p>
+          <h1 id="hero-title">
+            <span class="outline">WELCOME TO</span>
+            <span class="glitch" data-text="VIBE CODING">VIBE CODING</span>
+          </h1>
+          <p class="intro">낡은 문법은 잊어라.<br />이곳에서는 <strong>상상력이 곧 프로토콜</strong>이다.</p>
+          <div class="hero-actions">
+            <a class="enter-button" href="#briefing"><span>훈련 구역 입장</span><b>↗</b></a>
+            <p>SCROLL TO<br />INITIALIZE</p>
+          </div>
+        </div>
+
+        <div class="reactor" aria-hidden="true">
+          <div class="reactor-ring ring-one"></div>
+          <div class="reactor-ring ring-two"></div>
+          <div class="reactor-core"><span>∞</span></div>
+          <span class="reactor-label">CREATIVE<br />REACTOR</span>
+        </div>
+
+        <div class="ticker" aria-hidden="true">
+          <div>BUILD FAST ✦ BREAK RULES ✦ PROMPT BOLDLY ✦ CREATE THE AFTER ✦&nbsp;</div>
+          <div>BUILD FAST ✦ BREAK RULES ✦ PROMPT BOLDLY ✦ CREATE THE AFTER ✦&nbsp;</div>
+        </div>
+      </section>
+
+      <section class="briefing" id="briefing" aria-labelledby="briefing-title">
+        <div class="section-number">01 / BRIEFING</div>
+        <div class="briefing-main">
+          <p class="kicker">THE OLD WORLD ENDED WITH A SEMICOLON.</p>
+          <h2 id="briefing-title">코드 이후의 세계,<br /><em>당신이 설계할 차례.</em></h2>
+          <p class="body-copy">완벽한 코드를 기다리지 마세요. 아이디어를 말하고, AI와 함께 만들고, 세상에 빠르게 내보내세요. 오늘 이곳에서 여러분은 개발자가 아닌 <strong>세계의 설계자</strong>가 됩니다.</p>
+        </div>
+        <aside class="manifesto">
+          <div class="manifesto-head"><span>FIELD MANUAL</span><span>VER. 1.0</span></div>
+          <ol>
+            <li><b>상상하라</b><span>아이디어에는 허가가 필요 없다.</span></li>
+            <li><b>대화하라</b><span>명령 대신 맥락을 설계하라.</span></li>
+            <li><b>실험하라</b><span>실패는 가장 빠른 데이터다.</span></li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="mission" aria-labelledby="mission-title">
+        <div class="mission-copy">
+          <span class="stamp">SURVIVOR ORIENTATION</span>
+          <p class="section-number">02 / TODAY'S MISSION</p>
+          <h2 id="mission-title">첫 번째 신호를<br /><span>세상에 송출하라.</span></h2>
+          <p>당신의 언어로, 당신만의 것을. 작은 프롬프트에서 시작해 작동하는 결과물까지 도달하세요.</p>
+        </div>
+        <div class="terminal" role="img" aria-label="오늘의 미션 진행 상황을 보여주는 터미널">
+          <div class="terminal-bar"><span>MISSION_CONTROL.exe</span><i></i><i></i><i></i></div>
+          <div class="terminal-body">
+            <p><span class="prompt">root@vibe:~$</span> initialize --trainee</p>
+            <p class="dim">[OK] imagination module loaded</p>
+            <p class="dim">[OK] fear firewall disabled</p>
+            <p class="dim">[OK] creative link established</p>
+            <p><span class="prompt">root@vibe:~$</span> status</p>
+            <div class="progress"><span></span></div>
+            <p class="ready">YOU ARE READY_<span class="cursor"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>WELCOME, TRAINEE <span>당신의 미래는 아직 컴파일 중입니다.</span></p>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
